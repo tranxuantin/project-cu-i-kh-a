@@ -1,0 +1,364 @@
+@import "./variables";
+@import "./mixin";
+@import "./extend";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Condensed&display=swap');
+
+@media screen and (max-width:575px) {
+    .section3{
+        &-option{
+            display: block !important;
+            .newyork-top{
+                width: 100% !important;
+                height: 30% !important;
+                order: 1;
+                padding: 15px 0 !important;
+                .newyork-image{
+                    width: 85% !important;
+                    height: 100% !important;
+                }
+                .newyork-text{
+                    width: 273px !important;
+                    left: 7% !important;
+                    top: 15px !important;
+                }
+            }
+            .newyork-bottom{
+                width: 100% !important;
+                height: 30% !important;
+                order: 4;
+                padding: 15px 0 !important;
+                .newyork-image{
+                    width: 85% !important;
+                    height: 100% !important;
+                }
+                .newyork-text{
+                    width: 273px !important;
+                    left: 7% !important;
+                    top: 15px !important;
+                }
+            }
+            .singapore{
+                width: 100% !important;
+                height: 30% !important;
+                order: 2;
+                padding: 15px 0 !important;
+                .others-image{
+                    width: 85% !important;
+                    height: 100% !important;
+                }
+                .others-text{
+                    width: 293px !important;
+                    left: 2% !important;
+                    top: 15px !important;
+                }
+            }
+            .paris{
+                width: 100% !important;
+                height: 30% !important;
+                order: 3;
+                padding: 15px 0 !important;
+                .others-image{
+                    width: 85% !important;
+                    height: 100% !important;
+                }
+                .others-text{
+                    width: 273px !important;
+                    left: 7% !important;
+                    top: 15px !important;
+                }
+            }
+        }   
+    }
+}
+@media screen and (min-width:576px) and (max-width:768px) {
+    .section3{
+        padding-top: 100px !important;
+        &-option{
+            display: flex !important;
+            flex-direction: column !important;
+            flex-wrap: wrap !important;
+            width: 100% !important;
+            height: 2300px !important;
+            justify-items: center;
+            .newyork-top{
+                width: 540px !important;
+                height: 721px !important;
+                margin: 0 auto !important;
+                order: 1;
+                .newyork-image{
+                    width: 510px !important;
+                    height: 691px !important;
+                }
+                .newyork-text{
+                    left: 235px !important;
+                }
+            }
+            .newyork-bottom{
+                width: 540px !important;
+                height: 721px !important;
+                margin: 0 auto !important;
+                order: 4;
+                padding-top: 30px !important;
+                .newyork-image{
+                    width: 510px !important;
+                    height: 691px !important;
+                }
+                .newyork-text{
+                    left: 235px !important;
+                    margin-top: 30px !important;
+                }
+            }
+            .singapore{
+                width: 540px !important;
+                height: 409px !important;
+                margin: 0 auto !important;
+                order: 2;
+                .others-image{
+                    width: 510px !important;
+                    height: 379px !important;
+                }
+                .others-text{
+                    left: 235px !important;
+                }
+            }
+            .paris{
+                width: 540px !important;
+                height: 329px !important;
+                margin: 0 auto !important;
+                order: 3;
+                .others-image{
+                    width: 510px !important;
+                    height: 329px !important;
+                }
+                .others-text{
+                    left: 235px !important;
+                }
+            }
+        }
+        &-navbar{
+            margin-bottom: 0 !important;
+        }
+    }
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+    .section3{
+        &-option{
+            display: grid !important;
+            grid-template-columns: 33% 33% !important;
+            grid-template-rows: 47% 47% !important;
+            grid-column-gap: 100px !important;
+            .newyork-top{
+                height: 477px !important;
+                width: 360px !important;
+                .newyork-image{
+                    height: 447px !important;
+                    width: 330px !important;
+                }
+                .newyork-text{
+                    left: 55px !important;
+                }
+            }
+            .newyork-bottom{
+                height: 477px !important;
+                width: 360px !important;
+                .newyork-image{
+                    height: 447px !important;
+                    width: 330px !important;
+                }
+                .newyork-text{
+                    left: 55px !important;
+                }
+            }
+            .singapore{
+                height: 243px !important;
+                width: 360px !important;
+                .others-image{
+                    width: 330px !important;
+                    height: 213px !important; 
+                }
+                .others-text{
+                    right: 15px !important;
+                }
+            }
+            .paris{
+                height: 275px !important;
+                width: 360px !important;
+                position: absolute;
+                bottom: 235px !important;
+                right: 0 !important;
+                .others-image{
+                    width: 330px !important;
+                    height: 245px !important; 
+                }
+                .others-text{
+                    right: 15px !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:993px) and (max-width:1200px) {
+    .section3{
+        &-option{
+            display: flex !important;
+            flex-direction: row !important;
+            flex-wrap: wrap !important;
+            .newyork-top{
+                order: 1 !important;
+                padding: 10px  !important;
+                width: 320px !important;
+                height: 423px !important;
+                .newyork-image{
+                    width: 290px !important;
+                    height: 393px !important;
+                }
+                .newyork-text{
+                    left: 15px !important;
+                    top: 10px !important;
+                }
+            }
+            .singapore{
+                order: 2 !important;
+                padding: 10px  !important;
+                width: 640px !important;
+                height: 423px !important;
+                .others-image{
+                    width: 610px !important;
+                    height: 393px !important;
+                }
+                .others-text{
+                    right: 15px !important;
+                    top: 10px !important;
+                }
+            }
+            .newyork-bottom{
+                order: 4 !important;
+                margin-bottom: 270px !important;
+                padding: 10px  !important;
+                width: 320px !important;
+                height: 423px !important;
+                .newyork-image{
+                    width: 290px !important;
+                    height: 393px !important;
+                }
+                .newyork-text{
+                    left: 15px !important;
+                    top: 10px !important;
+                }
+            }
+            .paris{
+                order: 3 !important;
+                margin-bottom: 270px !important;
+                padding: 10px  !important;
+                width: 640px !important;
+                height: 484px !important;
+                .others-image{
+                    width: 610px !important;
+                    height: 454px !important;
+                }
+                .others-text{
+                    right: 15px !important;
+                    top: 10px !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:1349px) {
+    .section3{
+        &-option{
+            grid-row-gap: 90px !important;
+        }
+        .paris{
+            .others-image{
+                height: 543px !important;
+            }
+        }
+    }
+}
+
+.section3{
+    padding-top: 130px;
+    padding-bottom: 0 !important;
+    position: relative;
+    &-navbar{
+        margin-bottom: 50px;
+        &-title{
+            text-align: center;
+            text-transform: capitalize;
+            position: relative;
+            h3{
+                color: #D5AE82;
+                font-size: 18px;
+                font-family: 'Roboto', sans-serif ;
+            }
+            h1{
+                color: #263a4e;
+                font-size: 42px;
+                font-weight: 700;
+                font-family: 'Roboto Condensed';
+            }
+        }
+        &-menu{
+            text-align: center;
+            margin-top: 70px;
+            &-active{
+                color: #c59f74 !important;
+            }
+            ul{
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                li{
+                    padding: 0 10px;
+                    margin: 0 5px;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        font-family: 'Roboto', sans-serif ;
+                        text-transform: uppercase;
+                        font-size: 13px;
+                        transition: all 0.3s ease;
+                        &:hover{
+                            color: #D5AE82;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-option{
+        display: grid;
+        grid-template-columns: 28.5% 58.5%;
+        grid-template-rows: 43% 43%;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        justify-content: center;
+        height: 1000px;
+        .newyork-top{
+            height: 504px;
+            width: 380px;
+            @extend %section3-newyork;
+        }
+        .newyork-bottom{
+            height: 504px;
+            width: 380px;
+            @extend %section3-newyork;
+            margin: 0;
+        }
+        .singapore{
+            height: 500px;
+            width: 760px;
+            @extend %section3-others;
+        }
+        .paris{
+            height: 573px;
+            width: 760px;
+            @extend %section3-others;
+        }
+    }
+}

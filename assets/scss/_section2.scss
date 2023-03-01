@@ -1,0 +1,117 @@
+@import "./variables";
+@import "./mixin";
+@import "./extend";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Condensed&display=swap');
+
+@media screen and (max-width:659px) {
+    .section2{
+        padding: 10px !important;
+    }
+}
+@media screen and (max-width:394px) {
+    .section2{
+        &-detail{
+            &-text{
+                p{
+                    font-size: 10px !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:508px) {
+    .section2{
+        &-detail{
+            &-text{
+                h1{
+                    font-size: 30px !important;
+                }
+                p{
+                    font-size: 13px !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:950px) {
+    .section2{
+        display: flex;
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+        padding: 60px 0px !important;
+        padding-top: 130px !important;
+        &-image{
+            width: 100% !important;
+        }
+        &-detail{
+            width: 100% !important;
+            padding-left: 5% !important;
+            &-text{
+                width: 80% !important;
+            }
+        }
+    }
+}
+@media screen and (max-width:997px) {
+    .section2{
+        margin: 100px 0 !important;
+    }
+}
+.section2{
+    background-color: #dbdbdb9a;
+    display: flex;
+    flex-direction: row;
+    // flex-wrap: wrap;
+    padding: 130px 0;
+    &-image{
+        height: 495px;
+        width: 55%;
+        text-align: center;
+        &-img{
+            width: 90%;
+            height: 100%;
+        }
+    }
+    &-detail{
+        width:44%;
+        padding-left: 2%;
+        padding-top: 6%;
+        &-text{
+            h3{
+                font-size: 18px;
+                text-transform: capitalize;
+                color: orange;
+                font-family: 'Roboto Condensed';
+            }
+            h1{
+                font-size: 42px;
+                font-weight: 700;
+                color: #263a4e;
+                font-family: 'Roboto Condensed';
+            }
+            p{
+                font-size: 15px;
+                font-family: 'Roboto', sans-serif ;
+                color: #87898f;
+                width: 100%;
+                text-align: start;
+                padding: 0;
+                margin-top: 20px;
+            }
+        }
+        &-button{
+            &-btn{
+                border: 1px solid orange !important;
+                padding: 12px 35px !important;
+                margin-top: 20px;
+                &:hover{
+                    border: 1px solid purple !important;
+                    background-color: orange !important;
+                    color: white !important;
+                }
+            }
+        }
+    }
+}   

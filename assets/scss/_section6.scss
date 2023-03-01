@@ -1,0 +1,52 @@
+@import "./variables";
+@import "./mixin";
+@import "./extend";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Condensed&display=swap');
+
+@media screen and (max-width:320px) {
+    .section6{
+        margin-top: 400px !important;
+    }
+    .section6-hidden-max320{
+        display: none !important;
+    }
+    .brand{
+        width: 170px !important;
+        height: 70px !important;
+    }
+}
+@media screen and (min-width:321px) and (max-width:767px) {
+    .section6-hidden-max767{
+        display: none !important;
+    }
+    .brand{
+        width: 35% !important;
+        height: 80px !important;
+        margin: 0 20px !important;
+    }
+}
+.section6{
+    height: 200px;
+    position: relative;
+    .section6-background{
+        background: #aaaaaa79;
+        opacity: 0.5;
+        height: 170px;
+        position: absolute;
+    }
+    .brand{
+        width: 15%;
+        height: 10  0px;
+        margin: 0 10px;
+        opacity: 0.1;
+        transition: all 0.5s ease;
+        &:hover{
+            opacity: 1;
+        }
+    }
+    .row{
+        justify-content: center;
+    }
+}

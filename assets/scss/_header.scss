@@ -1,0 +1,102 @@
+@import "./variables";
+@import "./mixin";
+@import "./extend";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Condensed&display=swap');
+
+@media screen and (min-width:992px) {
+    .header{
+        .min-992{
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto !important;
+        }
+        .navbar-brand{
+            font-size: 30px !important;
+            font-weight: bold !important;
+            font-family: 'Roboto', sans-serif ;
+        }
+        li{
+            .active-home{
+                color: orange !important;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .nav-link{
+                color: white;
+                font-size: 15px;
+                font-family: 'Roboto', sans-serif ;
+                font-weight: 300;
+                text-transform: capitalize;
+                padding: 15px 20px !important;
+                transition: all 0.5s ease;
+                &:hover{
+                    color: orange !important;
+                }
+            }
+            .dropdown-item{
+                &:hover{
+                    color: orange !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:991px) {
+    .header{
+        .menu-max-991{
+            width: 100% !important;
+            position: relative;
+        }
+        .button-menu{
+            position: absolute;
+            right: 15px !important;
+        }
+        .header-button{
+            margin-top: 8px !important;
+            justify-items: end !important;
+            text-align: end !important;
+        }
+        .max-991{
+            margin: 0 auto !important;
+        }
+        .navbar-brand{
+            font-size: 30px !important;
+            font-weight: bold !important;
+            font-family: 'Roboto', sans-serif ;
+        }
+        .offcanvas-headers{
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+            .offcanvas-titles{
+                font-size: 35px !important;
+                text-transform: uppercase;
+                font-family: 'Roboto', sans-serif ;
+            }
+        }
+        li{
+            .active-home{
+                color: orange !important;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .nav-link{
+                color: white;
+                font-size: 13px;
+                font-family: 'Roboto', sans-serif ;
+                font-weight: 300;
+                text-transform: capitalize;
+                padding: 10px 0 !important;
+                transition: all 0.5s ease;
+                &:hover{
+                    color: orange !important;
+                }
+            }
+            .dropdown-item{
+                &:hover{
+                    color: orange !important;
+                }
+            }
+        }
+    }
+}

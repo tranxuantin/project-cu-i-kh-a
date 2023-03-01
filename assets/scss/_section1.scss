@@ -1,0 +1,73 @@
+@import "./variables";
+@import "./mixin";
+@import "./extend";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Condensed&display=swap');
+
+@media screen and (max-width:514px) {
+    .section1{
+        grid-template-columns: 100% !important;
+        .option-banner{
+            &-image{
+                width: 60% !important;
+            }
+        }
+        .option-text{
+            width: 75% !important;
+            margin: 0 auto !important;
+        }
+        .options{
+            @include section1-option-margin
+        }
+    }
+}
+@media screen and (min-width:515px) and (max-width:727px) {
+    .section1{
+        grid-template-columns: repeat(2,45%) !important;
+        .option-banner{
+            &-image{
+                width: 75% !important;
+            }
+        }
+        .option-text{
+            width: 70% !important;
+            margin: 0 auto !important;
+        }
+        .options{
+            @include section1-option-margin
+        }
+    }
+}
+@media screen and (min-width:728px) and (max-width: 997px) {
+    .section1{
+        grid-template-columns: repeat(2,37%) !important;
+        padding: 0 !important;
+        .option-banner{
+            &-image{
+                width: 80% !important;
+            }
+        }
+        .options{
+            @include section1-option-margin
+        }
+    }    
+}
+.section1{
+    display: grid;
+    grid-template-columns: repeat(4,16%);
+    grid-column-gap: 5%;
+    justify-content: center;
+    .option1{
+        @extend %section1-options;
+    }
+    .option2{
+        @extend %section1-options;
+    }
+    .option3{
+        @extend %section1-options;
+    }
+    .option4{
+        @extend %section1-options;
+    }
+}

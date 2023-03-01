@@ -1,0 +1,19 @@
+html ,body{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Condensed&display=swap');
+@import "./header";
+@import "./section-header";
+@import "./section1";
+@import "./section2";
+@import "./section3";
+@import "./section4";
+@import "./section5";
+@import "./section6";
+@import "./footer";
